@@ -1,7 +1,7 @@
 import http from "k6/http";
 import { check, group, sleep } from "k6";
 
-const url = "https://aa.seen.wtf/";
+const url = "http://localhost/";
 
 export const options = {
   stages: [
