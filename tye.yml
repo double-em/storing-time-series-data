@@ -1,0 +1,21 @@
+name: storing-data
+
+services:
+  
+  - name: InjectService
+    dockerFile: src/InjectService/Dockerfile
+    dockerFileContext: src
+    bindings:
+      - port: 7000
+        name: https
+        containerPort: 443
+        protocol: https
+        
+      - port: 5000
+        name: http
+        containerPort: 80
+        protocol: http
+        
+  - name: InjectorService
+    dockerFile: src/InjectorService/Dockerfile
+    dockerFileContext: src

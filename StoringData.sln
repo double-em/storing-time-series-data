@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\InjectService", "src\InjectService\InjectService.csproj", "{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\DataInjector", "src\DataInjector\DataInjector.csproj", "{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\Application", "src\Application\Application.csproj", "{EEBB1718-F35B-4660-AF85-8A80C28D27CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{28C3CF8B-8F97-4BA0-A8D2-DC138E1DC743}"
+	ProjectSection(SolutionItems) = preProject
+		devops\docker-compose.yml = devops\docker-compose.yml
+		tye.yml = tye.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "databases", "databases", "{FFD6A2DF-63AB-480F-A95C-6C0BAEAC90EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prometheus", "prometheus", "{7951FC45-FAC0-472C-86B9-D907C2C7C170}"
+	ProjectSection(SolutionItems) = preProject
+		devops\databases\prometheus\alert.rules = devops\databases\prometheus\alert.rules
+		devops\databases\prometheus\prometheus.yml = devops\databases\prometheus\prometheus.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "influxdb", "influxdb", "{C9239999-D785-4583-A0CF-46F905C3ABCF}"
+	ProjectSection(SolutionItems) = preProject
+		devops\databases\influxdb\config.yml = devops\databases\influxdb\config.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grafana", "grafana", "{5E965001-DA0A-4008-A14B-F169602B1A3E}"
+	ProjectSection(SolutionItems) = preProject
+		devops\databases\grafana\config.monitoring = devops\databases\grafana\config.monitoring
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "provisioning", "provisioning", "{49D3DB63-26B2-497C-879A-BB2CB6EF2A72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dashboards", "dashboards", "{DC668710-5AAA-42AC-AB8A-6E8AFD27B3E2}"
+	ProjectSection(SolutionItems) = preProject
+		devops\databases\grafana\provisioning\dashboards\dashboard.yml = devops\databases\grafana\provisioning\dashboards\dashboard.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datasources", "datasources", "{B3936B02-64DF-4B7E-8C7E-C94BA6973248}"
+	ProjectSection(SolutionItems) = preProject
+		devops\databases\grafana\provisioning\datasources\datasource.yml = devops\databases\grafana\provisioning\datasources\datasource.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k6", "k6", "{D8F8D835-998D-4ED2-956D-A9A082CF339E}"
+	ProjectSection(SolutionItems) = preProject
+		devops\k6\k6-executable = devops\k6\k6-executable
+		devops\k6\loadscript.js = devops\k6\loadscript.js
+		devops\k6\testscript.js = devops\k6\testscript.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectorService", "src\InjectorService\InjectorService.csproj", "{E2C32C64-D1D3-4DC3-BB19-F3D2DF178FAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C32C64-D1D3-4DC3-BB19-F3D2DF178FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C32C64-D1D3-4DC3-BB19-F3D2DF178FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C32C64-D1D3-4DC3-BB19-F3D2DF178FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C32C64-D1D3-4DC3-BB19-F3D2DF178FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFD6A2DF-63AB-480F-A95C-6C0BAEAC90EB} = {28C3CF8B-8F97-4BA0-A8D2-DC138E1DC743}
+		{7951FC45-FAC0-472C-86B9-D907C2C7C170} = {FFD6A2DF-63AB-480F-A95C-6C0BAEAC90EB}
+		{C9239999-D785-4583-A0CF-46F905C3ABCF} = {FFD6A2DF-63AB-480F-A95C-6C0BAEAC90EB}
+		{5E965001-DA0A-4008-A14B-F169602B1A3E} = {FFD6A2DF-63AB-480F-A95C-6C0BAEAC90EB}
+		{49D3DB63-26B2-497C-879A-BB2CB6EF2A72} = {5E965001-DA0A-4008-A14B-F169602B1A3E}
+		{DC668710-5AAA-42AC-AB8A-6E8AFD27B3E2} = {49D3DB63-26B2-497C-879A-BB2CB6EF2A72}
+		{B3936B02-64DF-4B7E-8C7E-C94BA6973248} = {49D3DB63-26B2-497C-879A-BB2CB6EF2A72}
+		{D8F8D835-998D-4ED2-956D-A9A082CF339E} = {28C3CF8B-8F97-4BA0-A8D2-DC138E1DC743}
+	EndGlobalSection
+EndGlobal
