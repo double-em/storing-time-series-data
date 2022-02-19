@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\InjectService", "src\InjectService\InjectService.csproj", "{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\DataInjector", "src\DataInjector\DataInjector.csproj", "{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\Application", "src\Application\Application.csproj", "{EEBB1718-F35B-4660-AF85-8A80C28D27CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{28C3CF8B-8F97-4BA0-A8D2-DC138E1DC743}"
@@ -61,10 +59,6 @@ Global
 		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B3F8E6-00B9-475F-AE2A-896E07A4CB86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1DEDEDD-E5BB-4BCA-ACCE-5A71F8A5339A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEBB1718-F35B-4660-AF85-8A80C28D27CE}.Release|Any CPU.ActiveCfg = Release|Any CPU

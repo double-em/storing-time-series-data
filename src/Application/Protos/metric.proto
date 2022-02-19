@@ -2,20 +2,21 @@ syntax = "proto3";
 
 option csharp_namespace = "InjectApi";
 
-package greet;
+package metric;
 
 // The greeting service definition.
-service Greeter {
+service Injector {
   // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc Insert (MetricRequest) returns (MetricReply);
 }
 
 // The request message containing the user's name.
-message HelloRequest {
+message MetricRequest {
   string name = 1;
+  int64 value = 2;
 }
 
 // The response message containing the greetings.
-message HelloReply {
+message MetricReply {
   string message = 1;
 }

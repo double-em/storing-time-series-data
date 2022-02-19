@@ -5,8 +5,9 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
     </PropertyGroup>
-
+    
     <ItemGroup>
         <PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
     </ItemGroup>
